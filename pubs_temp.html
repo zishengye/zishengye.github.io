@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <style>
+        .venue {
+            font-style: italic;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>For an autonomous future</title>
+
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <div id="research header" class="topnav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="publications.html">Publications</a>
+        <div class="topnav-right">
+            <a href="https://scholar.google.com/citations?user=s1i_KkgAAAAJ&hl=en">Google Scholar</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <h1>Journal Publications</h1>
+    <ol class="publication">
+        {%- for entry in entries %}
+        <li>
+            <p>
+                <span class="publication">
+                    <span class="pubtitle">
+                        {%- set url = entry|main_url %}
+                        {%- if url %}
+                        <a href="{{ url|escape }}">{{ entry|title }}</a>.
+                        {%- else %}
+                        {{ entry|title }}.
+                        {%- endif %}
+                    </span><br />
+                    <span class="authors">
+                        {{ entry.persons['author']|author_list }}.
+                    </span><br />
+                    <span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>.
+                    <br />
+                </span>
+            </p>
+        </li>
+        {%- endfor %}
+    </ol>
+</body>
+
+</html>
