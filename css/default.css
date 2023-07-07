@@ -44,8 +44,8 @@ ol.publication {
 }
 
 .pubtitle {
-    font-size: 18pt;
-    font-weight: bold;
+  font-size: 18pt;
+  font-weight: bold;
 }
 
 .venuetype {
@@ -61,5 +61,5 @@ ol.publication li p {
 }
 
 ol.publication li p:before {
-  content: "[J"counter(p-counter)"]";
+  content: "[J" counter(p-counter)"]";
 }

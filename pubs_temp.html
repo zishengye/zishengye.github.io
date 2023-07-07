@@ -27,27 +27,6 @@
 
     <h1>Journal Publications</h1>
     <ol class="publication">
-        {%- for entry in entries %}
-        <li>
-            <p>
-                <span class="publication">
-                    <span class="pubtitle">
-                        {%- set url = entry|main_url %}
-                        {%- if url %}
-                        <a href="{{ url|escape }}">{{ entry|title }}</a>.
-                        {%- else %}
-                        {{ entry|title }}.
-                        {%- endif %}
-                    </span><br />
-                    <span class="authors">
-                        {{ entry.persons['author']|author_list }}.
-                    </span><br />
-                    <span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>.
-                    <br />
-                </span>
-            </p>
-        </li>
-        {%- endfor %}
     </ol>
 </body>
 
