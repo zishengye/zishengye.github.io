@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html lang="eu">
 
-<head>
-    <style>
-        .venue {
-            font-style: italic;
-        }
-    </style>
-
-    <meta charset="UTF-8">
-    <title>For an autonomous future</title>
-    <link rel="icon" href="resources/logo.png">
-
-    <link rel="stylesheet" href="css/default.css">
-</head>
-
 <body>
+    <div id="header-placeholder"></div>
+
     <div id="contact header" class="topnav">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -51,4 +39,13 @@
         <br>
         <a href="mailto: zisheng_ye@outlook.com">zisheng_ye (at) outlook.com</a>
     </p>
+
+    <!-- JavaScript to load the header -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
