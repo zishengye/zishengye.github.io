@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: publications
+link: publications
 ---
 
 <div id="research header" class="topnav">

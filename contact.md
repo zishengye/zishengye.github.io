@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: contact
+link: contact
 ---
 
 <div id="contact header" class="topnav">

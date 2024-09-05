@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: index
+link: index
 ---
 
 <div id="home header" class="topnav">

@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: research
+link: research
 ---
 
 <div id="research header" class="topnav">

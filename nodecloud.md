@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: nodecloud
+link: nodecloud
 ---
 
 <div id="research header" class="topnav">
