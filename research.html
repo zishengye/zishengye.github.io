@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="eu">
 
-<body>
-    <div id="header-placeholder"></div>
+<!--#include file="header.html" -->
 
+<body>
     <div id="research header" class="topnav">
         <a href="index.html">Home</a>
         <a class="active" href="research.html">Research</a>
@@ -64,13 +64,4 @@
 
     <a href="https://github.com/zishengye/qtop">code</a>|<a
         href="https://ieeexplore.ieee.org/abstract/document/10099425/">paper</a>
-
-    <!-- JavaScript to load the header -->
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-    </script>
 </body>
