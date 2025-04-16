@@ -260,7 +260,7 @@ for y in reversed(range(older, newer + 1)):
                         if t == 'year':
                             html += ', {0}'.format(d[t])
                         if t == 'url':
-                            html += ' <a href="{0}">[html]</a>'.format(d[t])
+                            html += ' <a href="{0}">[paper]</a>'.format(d[t])
                         if t == 'doi':
                             html += ' <a href="http://dx.doi.org/{0}">[doi]</a>'.format(
                                 d[t])
