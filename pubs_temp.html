@@ -7,7 +7,7 @@ link: publications
     <a href="index">Home</a>
     <a href="research">Research</a>
     <a class="active" href="publications">Publications</a>
-    <a href="nodecloud">NodeCloud</a>
+    <a href="open-nodecloud">OpenNodeCloud</a>
     <div class="topnav-right">
         <a href="https://scholar.google.com/citations?user=s1i_KkgAAAAJ&hl=en">Google Scholar</a>
         <a href="contact">Contact</a>
